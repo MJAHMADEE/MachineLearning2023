@@ -50,6 +50,6 @@ This course repository is open-source and available under the [MIT License](LICE
 
 If you have questions or need assistance, you can reach out to the course instructor:
 
-- Instructor: [Mohammad Javad Ahmadu](mjahmadee@gmail.com)
+- Instructor: [Mohammad Javad Ahmadi](mjahmadee@gmail.com)
 
 Happy learning!
