@@ -1,4 +1,4 @@
-# Project Name Code of Conduct
+# Machine Learning 2023 Code of Conduct
 
 ## Purpose
 
