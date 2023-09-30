@@ -1,3 +1,11 @@
+# Chapter 1 PPTX Slides
+
+[![Google Drive](https://img.shields.io/badge/View%20Slides-Google%20Drive-blue)](https://drive.google.com/drive/folders/1d1oLCcXWyncBu0d5qvL9IgvT_PU2lzdS?usp=sharing)
+
+This folder contains PowerPoint (PPTX) slides for Chapter 1 of our course/material. Click the badge above to access and view the slides on Google Drive.
+
+Feel free to reach out if you have any questions or need further assistance.
+
 # Python Tutorial
 
 [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1pqe0y56YY0baq-orZzBbPRG7kNqPox9_?usp=sharing)
