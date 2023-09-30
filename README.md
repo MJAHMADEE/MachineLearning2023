@@ -50,6 +50,6 @@ This course repository is open-source and available under the [MIT License](LICE
 
 If you have questions or need assistance, you can reach out to the course instructor:
 
-- Instructor: [Mohammad Javad Ahmadi](mailto:mjahmadee@gmail.com)
+- Instructor: [![Email Me](https://img.shields.io/badge/Email%20Me-Email%20Badge-green)](mailto:mjahmadee@gmail.com)
 
 Happy learning!
