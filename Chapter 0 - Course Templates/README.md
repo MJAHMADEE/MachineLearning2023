@@ -38,7 +38,7 @@ This template is open-source and available under the [MIT License](LICENSE.md). 
 
 ## Feedback and Issues
 
-If you encounter any issues with the template or have suggestions for improvements, please [open an issue](https://github.com/MJAHMADEE/MachineLearning2023/tree/main/Chapter%200%20-%20Course%20Templates/issues) on the GitHub repository.
+If you encounter any issues with the template or have suggestions for improvements, please [open an issue](https://github.com/MJAHMADEE/MachineLearning2023/issues) on the GitHub repository.
 
 We hope you find this template useful for your homework assignments or reports. Happy typesetting!
 
