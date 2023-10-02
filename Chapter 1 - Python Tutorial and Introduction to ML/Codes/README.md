@@ -8,7 +8,7 @@ Feel free to reach out if you have any questions or need further assistance.
 
 # Python Tutorial
 
-[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1pqe0y56YY0baq-orZzBbPRG7kNqPox9_?usp=sharing)
+[![Open in Colab](https://colab.research.google.com/drive/1RmhuaYGUK9EII_AQpVUx-Hif5nsbZ4ZJ?usp=sharing)
 
 ## Table of Contents
 
