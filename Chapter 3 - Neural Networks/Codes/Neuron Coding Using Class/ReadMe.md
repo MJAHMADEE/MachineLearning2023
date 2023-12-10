@@ -33,9 +33,3 @@ The repository includes data preprocessing techniques such as:
 - `data_preprocessing.ipynb`: Notebook focusing on data preprocessing and analysis.
 - `confusion_matrix.png`: Saved confusion matrix heatmap.
 - `requirements.txt`: Python packages and versions required to run the code.
-
-## Instructions
-
-### Setup
-
-1. Install the required packages:
