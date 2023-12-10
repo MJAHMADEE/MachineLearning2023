@@ -1,35 +1,47 @@
-# Neural Network Models and Data Analysis
+# Neuron and Perceptron Implementation
 
-This repository contains Python code demonstrating various aspects of neural network models, data preprocessing, and analysis using `scikit-learn`, `imbalanced-learn`, and `tensorflow.keras`.
+This repository contains Python code implementing a neural network neuron (`Neuron` class) and a Perceptron classifier (`Perceptron` class) using NumPy and other libraries.
 
-## Description
+## Neuron Class
 
-The repository is structured as follows:
+The `Neuron` class implements a single neuron model capable of:
 
-### Neural Network Models
+- Activation functions: ReLU, Sigmoid, and Hyperbolic Tangent (tanh)
+- Loss functions: Binary Cross Entropy (BCE) and Mean Squared Error (MSE)
+- Training through gradient descent
+- Prediction and evaluation with accuracy
 
-#### MLP Classifier and Regression
+### Methods:
 
-The repository showcases the usage of `MLPClassifier` and `MLPRegressor` from `sklearn.neural_network`. The classifiers are trained on various datasets such as `load_diabetes` and `load_digits`. Evaluation metrics such as accuracy scores, confusion matrices, and classification reports are used to assess model performance.
+- `__init__(self, in_features, af=None, loss_fn=mse, n_iter=100, eta=0.1, verbose=True)`: Initializes the neuron with parameters.
+- `predict(self, x)`: Predicts output given input data.
+- `fit(self, x, y)`: Trains the neuron on input `x` and target `y`.
+- `gradient(self, x, y, y_hat)`: Calculates gradients for weights and biases.
+- `gradient_descent(self)`: Updates weights and biases using gradient descent.
+- `parameters(self)`: Returns the neuron's parameters.
 
-#### Keras Sequential Models
+### Usage:
 
-Demonstrates the creation of various neural network architectures using `tensorflow.keras.Sequential`. Different configurations of hidden layers and activation functions are explored and analyzed using `Sequential` models.
+Instantiate a `Neuron` object and use `fit` to train the neuron on data `X` and target `y`. Example:
 
-### Data Preprocessing and Analysis
+```python
+neuron = Neuron(2, af=sigmoid, loss_fn=bce, n_iter=500)
+neuron.fit(X, y[:, None])
+```
 
-The repository includes data preprocessing techniques such as:
+## Neuron Class
 
-- Scaling data using `StandardScaler` from `sklearn.preprocessing`.
-- Handling missing values and cleaning data using pandas.
-- Feature engineering to extract company names from a car dataset.
-- Replacing misspelled or incorrect company names for consistency.
-- Calculating correlations between features and visualizing them using heatmaps.
-- Creating scatter plots to visualize relationships between specific features and the target variable (`price`).
+The `Neuron` class is a single neuron model featuring:
 
-### File Structure
+- Activation functions: ReLU, Sigmoid, and Hyperbolic Tangent (tanh)
+- Loss functions: Binary Cross Entropy (BCE) and Mean Squared Error (MSE)
+- Training using gradient descent
+- Prediction and evaluation, including accuracy calculation
 
-- `neural_networks.ipynb`: Jupyter notebook containing neural network model implementations and evaluations.
-- `data_preprocessing.ipynb`: Notebook focusing on data preprocessing and analysis.
-- `confusion_matrix.png`: Saved confusion matrix heatmap.
-- `requirements.txt`: Python packages and versions required to run the code.
+## Perceptron Class
+
+The `Perceptron` class leverages `sklearn.linear_model.Perceptron` for classification tasks. It comprises functionalities for:
+
+- Loading and segregating datasets
+- Training the Perceptron classifier
+- Accuracy assessment on both training and test sets
