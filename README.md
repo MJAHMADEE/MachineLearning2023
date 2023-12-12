@@ -1,5 +1,8 @@
 # Machine Learning Course Repository
 
+![](https://api.visitorbadge.io/api/VisitorHit?user=MJAHMADEE&repo=MachineLearning2023-&countColor=%237B1E7A)
+
+
 Welcome to the official repository for the "Machine Learning" course! This repository contains all the resources and materials you need to succeed in the course.
 
 ## Course Overview
