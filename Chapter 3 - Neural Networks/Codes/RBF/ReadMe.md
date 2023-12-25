@@ -1,15 +1,61 @@
-# Radial Basis Function Neural Network (RBFNN)
+# Radial Basis Function Network (RBF)
 
-This repository contains a Python implementation of a Radial Basis Function Neural Network (RBFNN). The RBFNN is a type of artificial neural network that uses radial basis functions as activation functions.
+This repository contains an implementation of a Radial Basis Function Network (RBF) in Python.
 
 ## Overview
 
-The RBF class in this repository provides functionalities to create and train an RBFNN model. It includes methods to fit the model, predict outputs, visualize training progress (loss and accuracy), and more.
+The RBF class implements functionalities to create, train, and use a Radial Basis Function Network for classification tasks. The network architecture includes:
 
-### Usage
+- Initialization and fitting of centers using KMeans clustering
+- Training the RBF network with specified parameters
+- Prediction capabilities
+- Monitoring loss and accuracy during training
+- Visualization of training metrics (Loss and Accuracy)
 
-To use the RBFNN model:
+## Usage
 
-1. **Instantiate the RBF model**:
+### Instantiating the RBF Model
+
+```python
+from RBF import RBF
+
+# Create an RBF instance
+model = RBF('My_First_RBF')
+```
+
+### Training the RBF Model
    ```python
-   Model = RBF('My First RBF')
+   # Fit the model with input data X and one-hot encoded labels OHY
+   model.fit(X, OHY, nH=3, nEpoch=50, lr=1e-3)
+   ```
+### Making Predictions
+   ```python
+   # Obtain predictions for input data X
+   predictions = model.predict(X)
+   ```
+### Visualizing Training Metrics
+
+   ```python
+# Access training history for Loss and Accuracy
+losses = model.history['loss']
+accuracies = model.history['accuracy']
+
+# Plotting Loss and Accuracy
+# (Two separate plots side by side)
+import matplotlib.pyplot as plt
+
+plt.subplot(1, 2, 1)
+plt.plot(losses, lw=1.2, c='crimson', marker='o', ms=3)
+plt.title('Loss')
+plt.xlabel('Epoch')
+plt.ylabel('MSE')
+
+plt.subplot(1, 2, 2)
+plt.plot(accuracies, lw=1.2, c='teal', marker='o', ms=3)
+plt.title('Accuracy')
+plt.xlabel('Epoch')
+plt.ylabel('Accuracy')
+
+plt.show()
+   ```
+
