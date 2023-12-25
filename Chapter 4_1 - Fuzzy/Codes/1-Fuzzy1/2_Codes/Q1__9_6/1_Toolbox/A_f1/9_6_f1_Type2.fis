@@ -1,0 +1,38 @@
+[System]
+Name='9_6_f1_Type2'
+Type='mamdani'
+Version=3.0
+NumInputs=2
+NumOutputs=1
+NumRules=2
+AndMethod='prod'
+OrMethod='max'
+ImpMethod='prod'
+AggMethod='max'
+DefuzzMethod='centroid'
+TypeReductionMethod='karnikmendel'
+
+[Input1]
+Name='input1'
+Range=[-1 2]
+NumMFs=2
+MF1='mf1':'trimf',[-1 0 1],[1],[0.2 0.2]
+MF2='mf2':'trimf',[0 1 2],[1],[0.2 0.2]
+
+[Input2]
+Name='input2'
+Range=[-1 2]
+NumMFs=2
+MF1='mf1':'trimf',[-1 0 1],[1],[0.2 0.2]
+MF2='mf2':'trimf',[0 1 2],[1],[0.2 0.2]
+
+[Output1]
+Name='output1'
+Range=[-1 2]
+NumMFs=2
+MF1='mf1':'trimf',[-1 0 1],[1],[0.2 0.2]
+MF2='mf2':'trimf',[0 1 2],[1],[0.2 0.2]
+
+[Rules]
+1 2, 1 (1) : 1
+2 1, 2 (1) : 1
