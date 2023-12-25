@@ -24,3 +24,13 @@ This repository contains code implementations for various neural network models 
 
 - **AI4021_Chapter_3_MLP.ipynb**
   - Description: Jupyter Notebook implementing a Multi-Layer Perceptron (MLP) discussed in Chapter 3.
+
+### Hopfield and Hamming
+
+- **AI4021_Chapter_3_Hopfield_and_Hamming.ipynb**
+  - Description: Jupyter Notebook implementing the Hopfield and Hamming network introduced in Chapter 3.
+
+### RBF
+
+- **AI4021_Chapter_3_RBF.ipynb**
+  - Description: Jupyter Notebook implementing Radial Basis Function (RBF) network discussed in Chapter 3.
